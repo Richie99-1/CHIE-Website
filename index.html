@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHIE Game Shop</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo-container">
+        <h1 class="logo">CHIE <span>Game Shop</span></h1>
+        <p class="tagline">Trusted • Fast • Affordable Gaming Top-Ups</p>
+    </div>
+    <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://youtu.be/bK3bsBxN_Rc?si=kLPN3wOwHgXTo055" target="_blank" class="btn-tutorial"><i class="fa-solid fa-video"></i> Tutorial</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Top Up Robux & Game Items Safely</h2>
+        <p>Fast, Trusted, and Affordable service for all Roblox gamers in Indonesia.</p>
+        <a href="https://youtu.be/bK3bsBxN_Rc?si=kLPN3wOwHgXTo055" class="tutorial-btn" target="_blank"><i class="fa-solid fa-video"></i> Watch Tutorial</a>
+        <p class="contact-info">Questions? DM <strong>@lostchie</strong> on Discord.</p>
+        <div class="animated-robux">
+            <span>💰</span><span>💎</span><span>🪙</span><span>💰</span><span>💎</span>
+        </div>
+    </div>
+</section>
+
+<!-- Shop Section -->
+<section id="shop" class="shop-container">
+    <div class="card">
+        <h2>Buy Robux</h2>
+        <p class="price-info">Rp 15.000 / 100 Robux</p>
+        <form id="buy-form">
+            <label>Roblox Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label>Gamepass Link:</label>
+            <input type="url" id="gamepass" placeholder="Paste your gamepass link" required>
+
+            <label>Choose Robux Amount:</label>
+            <select id="robux-select">
+                <option value="100">100 Robux</option>
+                <option value="200">200 Robux</option>
+                <option value="300">300 Robux</option>
+                <option value="500">500 Robux</option>
+                <option value="1000">1000 Robux</option>
+            </select>
+
+            <p class="total-price">Total: <span id="price-output">Rp 15.000</span></p>
+
+            <label>Payment Method:</label>
+            <div class="payment-methods">
+                <label><input type="radio" name="pay" value="GoPay" required> GoPay</label>
+                <label><input type="radio" name="pay" value="OVO"> OVO</label>
+                <label><input type="radio" name="pay" value="Dana"> Dana</label>
+                <label><input type="radio" name="pay" value="BCA"> BCA</label>
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Continue</button>
+        </form>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="about-container">
+        <h2>About CHIE Game Shop</h2>
+        <p>Looking for a fast, safe, and affordable way to top up Robux or purchase game items? <strong>Choose CHIE Game Shop</strong> – your trusted gaming partner!</p>
+        <ul>
+            <li>✨ Affordable & competitive prices</li>
+            <li>✔️ 100% Trusted Seller</li>
+            <li>❌ No Scams, No Hacks</li>
+            <li>⚡ Fast Processing & Friendly Support</li>
+        </ul>
+        <p>Since 2021, <strong>CHIE Game Shop</strong> has completed over <strong>1,500+ transactions</strong> and is trusted by gamers across Indonesia. We regularly offer <strong>exciting promotions</strong> to meet your gaming needs.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Have questions? DM <strong>@lostchie</strong> on Discord.</p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 CHIE Game Shop — Trusted Roblox Top-Up Store</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
