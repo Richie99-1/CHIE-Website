@@ -1,0 +1,58 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+body { background: linear-gradient(135deg,#f0f8ff,#d0e8ff); color: #101820; }
+
+/* Header */
+.header { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:linear-gradient(90deg,#00c6ff,#0072ff); color:white; flex-wrap:wrap; }
+.header .logo { font-size:2rem; font-weight:bold; }
+.header .logo span { color:#ffdd00; }
+.header .nav a { margin-left:20px; color:white; text-decoration:none; font-weight:500; transition:0.3s; }
+.header .nav a:hover { color:#ffdd00; }
+.btn-tutorial { background:#ffdd00; color:#101820; padding:8px 15px; border-radius:8px; }
+
+/* Hero */
+.hero { display:flex; justify-content:center; align-items:center; padding:80px 20px; flex-wrap:wrap; text-align:center; }
+.hero-text h2 { font-size:2.5rem; margin-bottom:20px; animation: fadeInDown 1s ease; }
+.hero-text p { margin-bottom:20px; animation: fadeIn 1s ease; }
+.tutorial-btn { display:inline-block; padding:12px 20px; border-radius:10px; font-weight:bold; text-decoration:none; transition:0.3s; }
+.tutorial-btn:hover { transform:scale(1.05); }
+
+/* Animated Robux Icons */
+.animated-robux { margin-top:30px; }
+.animated-robux span { font-size:2rem; display:inline-block; margin:0 5px; animation: float 2s infinite ease-in-out; }
+.animated-robux span:nth-child(2) { animation-delay:0.3s; }
+.animated-robux span:nth-child(3) { animation-delay:0.6s; }
+.animated-robux span:nth-child(4) { animation-delay:0.9s; }
+.animated-robux span:nth-child(5) { animation-delay:1.2s; }
+
+@keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-15px); } }
+@keyframes fadeInDown { 0% { opacity:0; transform:translateY(-50px); } 100% { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
+
+/* Shop */
+.shop-container { display:flex; justify-content:center; padding:60px 20px; }
+.shop-container .card { background:#fff; padding:30px; border-radius:20px; width:100%; max-width:450px; box-shadow:0 15px 35px rgba(0,0,0,0.2); transition:transform 0.3s; }
+.shop-container .card:hover { transform:translateY(-5px); }
+.shop-container .card h2 { text-align:center; margin-bottom:15px; }
+.shop-container .card label { margin-top:12px; display:block; font-weight:500; }
+.shop-container .card input,
+.shop-container .card select { width:100%; padding:12px; margin-top:6px; border:1px solid #ddd; border-radius:10px; }
+.shop-container .card button { width:100%; padding:15px; background:#00c6ff; border:none; border-radius:12px; color:white; font-weight:bold; margin-top:20px; cursor:pointer; transition:0.3s; }
+.shop-container .card button:hover { background:#0072ff; }
+
+/* About */
+.about { background:#f7f9fc; padding:60px 20px; }
+.about-container { max-width:800px; margin:0 auto; text-align:center; }
+.about-container h2 { font-size:2rem; margin-bottom:20px; }
+.about-container ul { list-style:none; margin:20px 0; padding:0; }
+.about-container ul li { margin:10px 0; font-size:1.1rem; }
+
+/* Contact */
+.contact { background:#00c6ff; color:white; padding:40px 20px; text-align:center; }
+.contact h2 { font-size:1.8rem; margin-bottom:15px; }
+
+/* Footer */
+.footer { text-align:center; padding:20px; color:#101820; opacity:0.7; }
+
+/* Responsive */
+@media(max-width:900px){ .hero { flex-direction:column; } }
